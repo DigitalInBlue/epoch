@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F903430F-4CC7-4FD6-B7F9-F8D9067323D7}</ProjectGuid>
+    <RootNamespace>CinderPlayer2</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Epoch</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\..\cinder_0.8.5_vc2012\include;..\..\cinder_0.8.5_vc2012\boost;..\blocks\FMOD\include;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/build-32;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/toolkit;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/asf;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/vorbis;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/flac;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/flac;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpc;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mp4;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg/id3v2;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg/id3v2/frames;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/wavpack;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/speex;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/trueaudio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies);..\blocks\FMOD\lib\msw\fmodex_vc.lib;C:\Users\John\Source Code\taglib-1.8\taglib-1.8\build-32\taglib\Release\tag.lib;F:\HIVESuite\3rdParty\VS2012\32\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\cinder_0.8.5_vc2012\lib";"..\..\cinder_0.8.5_vc2012\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "..\blocks\FMOD\lib\msw\fmodex.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\cinder_0.8.5_vc2012\include;..\..\cinder_0.8.5_vc2012\boost;..\blocks\FMOD\include;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/build-32;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/toolkit;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/asf;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/vorbis;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/flac;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/flac;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpc;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mp4;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg/id3v2;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/mpeg/id3v2/frames;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/wavpack;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/ogg/speex;C:/Users/John/Source Code/taglib-1.8/taglib-1.8/bindings/c/../../taglib/trueaudio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies);..\blocks\FMOD\lib\msw\fmodex_vc.lib;C:\Users\John\Source Code\taglib-1.8\taglib-1.8\build-32\taglib\Release\tag.lib;F:\HIVESuite\3rdParty\VS2012\32\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\John\Source Code\cinder_0.8.5_vc2012\lib;C:\Users\John\Source Code\cinder_0.8.5_vc2012\lib\msw</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImportLibrary>
+      </ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "..\blocks\FMOD\lib\msw\fmodex.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Particle.h" />
+    <ClInclude Include="..\include\ParticleController.h" />
+    <ClInclude Include="..\include\Resources.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Epoch.cpp" />
+    <ClCompile Include="..\src\Particle.cpp" />
+    <ClCompile Include="..\src\ParticleController.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
